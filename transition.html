@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Transition</title>
+    <style>
+        h1{
+            font-family: cooper;
+            text-align: center;
+            border: 3px solid red;
+        }
+        div{
+            width: 100px;
+            height: 100px;
+            margin-left: 200px;
+            margin-top: 50px;
+        }
+        .t1{
+            background-color: rgb(73, 146, 166);
+            transition: width 3s;
+        }
+        .t1:hover{
+            width: 400px;
+        }
+        .t2{
+            background-color: rgb(189, 61, 61);
+            transition: height 2s;
+        }
+        .t2:hover{
+           height: 150px;
+        }
+        .t3{
+            background-color: rgb(76, 122, 61);
+            transition: width 2s, height 3s;
+        }
+        .t3:hover{
+           height: 150px;
+           width: 200px;
+        }
+        .btn{
+            width: 70px; 
+            border: 2px solid rgb(34, 56, 107);
+            background-color: rgb(49, 130, 139);  
+            transition: height 3s, width 2s; 
+            color: beige;  
+            margin-left: 200px; 
+            margin-top: 50px;
+        }
+        .btn:hover{
+           height: 50px;
+           width: 100px;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Transition</h1>
+    <div class="t1"></div> 
+    <div class="t2"></div> 
+    <div class="t3"></div> 
+    <button class="btn">Button</button>
+</body>
+</html>

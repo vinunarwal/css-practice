@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gradients</title>
+    <style>
+        h1{
+            font-family: cooper;
+            text-align: center;
+            border: 3px solid green;
+        }
+        h3{
+            font-size: large;
+            font-family: cooper;
+            text-align: center;
+            padding-top: 10px;
+        }
+        #g1{
+            height: 200px;
+            background-image: linear-gradient(violet, lightgreen);
+        }
+        #g2{
+            height: 200px;
+            background-image: linear-gradient(to left, rgb(46, 151, 134),rgb(194, 87, 96), rgb(137, 238, 115));
+        }
+
+        #g3{
+            height: 200px;
+            background-image: linear-gradient(to right, skyblue, pink);
+        }
+        #g4{
+            height: 200px;
+            background-image: linear-gradient(to bottom right, rgb(188, 84, 84), rgb(88, 88, 207));
+        }
+        #g5{
+            height: 200px;
+            background-image: linear-gradient(to left, rgb(69, 89, 96), rgb(238, 236, 115));
+        }
+        #g6{
+            height: 200px;
+            background-image: repeating-linear-gradient(rgb(191, 166, 183) 5%,rgb(75, 75, 169), lightgreen 20%);
+        }
+        #g7{
+            height: 200px;
+            background-image: repeating-linear-gradient(70deg,rgb(81, 203, 116) 10%,rgb(88, 101, 200), rgb(143, 56, 88) 20%);
+        }
+        #rg1{
+            height: 200px;
+            background-image: radial-gradient( skyblue, pink, rgb(147, 226, 163));
+        }
+        #rg2{
+            height: 200px;
+            background-image: radial-gradient(rgb(143, 44, 44) 5%, rgb(67, 206, 231) 10%, rgb(201, 238, 173)30%);
+        }
+        #rg3{
+            height: 200px;
+            background-image: repeating-radial-gradient( skyblue 10%, pink, rgb(147, 226, 163) 15%);
+        }
+        #rg4{
+            height: 250px;
+            width: 400px;
+            margin-left: 400px;
+            background-image: radial-gradient(circle, skyblue, pink, rgb(147, 226, 163));     
+            border-radius: 20%;    
+        }
+        #rg5{
+            height: 250px;
+            width: 400px;
+            margin-left: 400px;
+            background-image: radial-gradient(rgb(143, 44, 44) 5%, rgb(67, 206, 231) 10%, rgb(201, 238, 173)30%);
+        }
+        #rg6{
+            height: 250px;
+            width: 400px;
+            margin-left: 400px;
+            background-image: radial-gradient(closest-side at 50% 60%, skyblue, pink, rgb(147, 226, 163));
+        }
+        #rg7{
+            height: 250px;
+            width: 400px;
+            margin-left: 400px;
+            background-image: radial-gradient(farthest-side at 60% 60%, rgb(143, 44, 44) 5%, rgb(67, 206, 231) 10%, rgb(201, 238, 173)30%);
+        }
+        #cg1{
+            height: 250px;
+            width: 400px;
+            margin-left: 400px;
+            background-image: conic-gradient(pink, skyblue, lightgreen, blue);
+            border-radius: 50%;
+        }
+        #cg2{
+            height: 250px;
+            width: 400px;
+            margin-left: 400px;
+            background-image: repeating-conic-gradient(skyblue 10%, pink 20%);
+        }
+        #cg3{
+            height: 250px;
+            width: 400px;
+            margin-left: 400px;
+            background-image: repeating-conic-gradient(skyblue 10%, pink 20%);
+            border-radius: 50%;
+        }
+        #cg4{
+            height: 250px;
+            width: 400px;
+            margin-left: 400px;
+            background-image: repeating-conic-gradient(rgb(117, 117, 192) 0deg 10deg, rgb(148, 209, 116) 10deg 20deg, rgb(209, 160, 203) 20deg 30deg);
+            border-radius: 10%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Linear Gradients</h1><br><br>
+    <div id="g1"><h3>Linear Gradients(Top to Bottom)</h3></div><br><br>
+    <div id="g2"><h3>Linear Gradients(To Left [Multicolor])</h3></div><br><br>
+    <div id="g3"><h3>Linear Gradients(To Right)</h3></div><br><br>
+    <div id="g4"><h3>Linear Gradients(To Bottom Right)</h3></div><br><br>
+    <div id="g5"><h3>Linear Gradients(To Left)</h3></div><br><br>
+    <div id="g6"><h3>Linear Gradients(Repeating)</h3></div><br><br>
+    <div id="g7"><h3>Linear Gradients(Repeating in degree)</h3></div><br><br>
+
+    <h1>Radial Gradients</h1><br><br>
+
+    <div id="rg1"><h3>Radial Gradients</h3></div><br><br>
+    <div id="rg2"><h3>Radial Gradients</h3></div><br><br>
+    <div id="rg3"><h3>Radial Gradients(Repeating)</h3></div><br><br>
+    <div id="rg4"><h3>Radial Gradients(Shape:Circle)</h3></div><br><br>
+    <div id="rg5"><h3>Radial Gradients</h3></div><br><br>
+    <div id="rg6"><h3>Radial Gradients(Closest-side)</h3></div><br><br>
+    <div id="rg7"><h3>Radial Gradients(Farthest-side)</h3></div><br><br>
+
+    <h1>Conic Gradients</h1><br><br>
+
+    <div id="cg1"><h3>Conic Gradients</h3></div><br><br>
+    <div id="cg2"><h3>Conic Gradients(Repeating)</h3></div><br><br>
+    <div id="cg3"><h3>Conic Gradients</h3></div><br><br>
+    <div id="cg4"><h3>Conic Gradients(Repeating)</h3></div><br><br>
+</body>
+</html>

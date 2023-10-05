@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Animation</title>
+    <style>
+        h1{
+            text-align: center;
+            font-family: cooper;
+            border: 5px solid green;
+            padding: 5px;
+        }
+        h3{
+            margin-left: 100px;
+            font-family: cooper;
+        }
+        div{
+            height: 100px;
+            width: 100px;
+            margin-top: 50px;
+            position: relative;
+        }
+        #div1{
+            background-color: lightblue;
+            animation-name: a1;
+            animation-duration: 10s; 
+        }
+        @keyframes a1{
+            from{background-color: lightblue; margin-left: 100px;}
+            to{background-color: blue; margin-left: 900px;}
+        }
+        #div2{
+            background-color: pink;
+            animation-name: a2;
+            animation-duration: 10s;  
+            animation-iteration-count: infinite;
+        }
+        @keyframes a2{
+            from{width: 100px; background-color: pink; margin-left: 100px;}
+            to{width: 300px; background-color: lightgreen; margin-left: 800px;}
+        }
+        #div3{
+            background-color: pink;
+            animation-name: a3;
+            animation-duration: 10s; 
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+        }
+        @keyframes a3{
+            from{width: 100px; background-color: pink;}
+            to{width: 300px; background-color: lightgreen;}
+        }
+        #div4{
+            background-color: pink;
+            animation-name: a4;
+            animation-duration: 10s; 
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes a4{
+            from{width: 100px; background-color: pink;}
+            to{width: 300px; background-color: lightgreen;}
+        }
+        #div5{
+            background-color: rgb(209, 57, 57);
+            animation-name: a5;
+            animation-duration: 10s; 
+            animation-iteration-count: infinite;
+            animation-timing-function: ease;
+        }
+        @keyframes a5{
+            0%   {background-color:rgb(209, 57, 57); left:50px; top:20px; width: 150px;}
+            25%  {background-color:rgb(151, 210, 236); left:300px; top:200px; width: 250px;}
+            50%  {background-color:rgb(120, 26, 69); left:700px; top:300px; width: 200px;}
+            75%  {background-color:rgb(109, 169, 109); left:0px; top:200px; width: 150px;}
+            100% {background-color:rgb(29, 145, 132); left:50px; top:2px; width: 250px;}
+        }
+       
+
+    </style>
+</head>
+<body>
+    <h1>Animation</h1> 
+    <div id="div1"></div><br> <hr size="3px" color="green">
+    <div id="div2"></div><br> <hr size="3px" color="green">
+    <div id="div3"></div><br><h3>Reverse Direction</h3> <hr size="3px" color="green">
+    <div id="div4"></div><br><h3>Alternate Direction</h3> <hr size="3px" color="green">
+    <div id="div5"></div>  
+</body>
+</html>
